@@ -23,6 +23,8 @@ To train an action network, run this command:
 python train.py --cost <cost_function_name>
 ```
 
+As of now, the following three cost functions are available: `QuadraticCost`, `QuadraticCostQuadraticEffort`, `AsymmetricQuadratic` 
+
 ## Inference
 
 To run inference on a simulated dataset, run:
