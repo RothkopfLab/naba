@@ -8,6 +8,20 @@ from naba.costs import CostFunction
 from naba.parameters import Parameter
 
 
+class LinexParams(NamedTuple):
+    a: Parameter = 1.
+
+
+class Linex(CostFunction):
+    param_type = LinexParams
+    param_priors = param_type(a=dist.LogNormal(jnp.log(.5), 1.))
+
+    def __call__(self, state: ArrayLike, response: ArrayLike) -> ArrayLike:
+        a = self.params.a
+        b = 2 / a ** 2
+        return b * (jnp.exp(a * (response - state)) - a * (response - state) - 1.)
+
+
 class AsymmetricParams(NamedTuple):
     alpha: Parameter = 0.5
 
