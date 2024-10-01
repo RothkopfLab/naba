@@ -33,5 +33,13 @@ To run inference on a simulated dataset, run:
 python run_inference.py --cost <cost_function_name>
 ```
 
+## Disentangling priors and costs
+
+To run the script that disentangles prior and costs using multiple levels of perceptual uncertainty, run:
+
+```
+python disentangling.py
+```
+
 ## Results
 ![results](figure.png)
