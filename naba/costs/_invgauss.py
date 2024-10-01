@@ -4,8 +4,8 @@ from jaxtyping import ArrayLike
 import jax.numpy as jnp
 import numpyro.distributions as dist
 
-from fechner.costs._base import CostFunction
-from fechner.parameters import Parameter
+from naba.costs._base import CostFunction
+from naba.parameters import Parameter
 
 
 class InvGaussParams(NamedTuple):

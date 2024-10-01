@@ -3,8 +3,8 @@ from jaxtyping import ArrayLike
 import numpyro.distributions as dist
 from numpyro.distributions import LogNormal
 
-from fechner.costs._base import CostFunction
-from fechner.costs._quadratic import EffortParams
+from naba.costs._base import CostFunction
+from naba.costs._quadratic import EffortParams
 
 
 class AbsoluteCost(CostFunction):
@@ -24,4 +24,3 @@ class AbsoluteCostQuadraticEffort(CostFunction):
 
     def optimal_estimate(self, posterior_dist: LogNormal) -> ArrayLike:
         return jnp.exp(posterior_dist.loc)
-        
