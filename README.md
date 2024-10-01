@@ -1,5 +1,5 @@
-# Inferring uncertainties, priors and costs from human behavior using neural amortized Bayesian actors
-(anonymous NeurIPS 2024 submission)
+# Inverse decision-making using neural amortized Bayesian actors
+(anonymous ICLR 2025 submission)
 
 ## Requirements
 
@@ -23,7 +23,7 @@ To train an action network, run this command:
 python train.py --cost <cost_function_name>
 ```
 
-As of now, the following three cost functions are available: `QuadraticCost`, `QuadraticCostQuadraticEffort`, `AsymmetricQuadratic` 
+As of now, the following cost functions are available: `QuadraticCost`, `QuadraticCostQuadraticEffort`, `AsymmetricQuadratic`, `Linex`, `AbsoluteCost`, `AbsoluteCostQuadraticEffort`, `InvertedGaussian`
 
 ## Inference
 
