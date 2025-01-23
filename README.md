@@ -1,5 +1,8 @@
 # Inverse decision-making using neural amortized Bayesian actors
-(anonymous ICLR 2025 submission)
+
+This repository contains the official implementation of the inverse decision-making method presented in the ICLR 2025 paper
+
+> Straub, D., Niehues, T. F., Peters, J., & Rothkopf, C. A. (2025). Inverse decision-making using neural amortized Bayesian actors. ICLR 2025.
 
 ## Requirements
 
